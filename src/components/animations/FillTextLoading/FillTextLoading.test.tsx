@@ -29,7 +29,7 @@ describe("FillTextLoading", () => {
     await takeSnapshot("FillTextLoading - LongLabel props");
   });
 
-  /*   test("Unstable - renders with random label and cycleMs", async () => {
+  test("Unstable - renders with random label and cycleMs", async () => {
     const UNSTABLE_LABELS = [
       "Loading",
       "Synchronizing",
@@ -49,8 +49,8 @@ describe("FillTextLoading", () => {
     expect(screen.container.firstChild).toBeTruthy();
     await expect.element(screen.getByText(label).first()).toBeVisible();
     await takeSnapshot("FillTextLoading - Unstable rest with random options");
-  }); */
-  /* test("Unstable - Parameterized test with delay", async () => {
+  });
+  test("Unstable - Parameterized test with delay", async () => {
     const UNSTABLE_LABELS = [
       "Loading",
       "Synchronizing",
@@ -78,5 +78,5 @@ describe("FillTextLoading", () => {
     await takeSnapshot(
       "FillTextLoading - Test with parameterized delay and random options - After delay",
     );
-  }); */
+  });
 });

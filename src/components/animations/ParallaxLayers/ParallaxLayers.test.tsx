@@ -23,7 +23,7 @@ describe("ParallaxLayers", () => {
     );
     expect(screen.container.firstChild).toBeTruthy();
   });
-  /* 
+
   test("Unstable - renders with random axis and durationMs", async () => {
     const screen = await render(
       <ParallaxLayers
@@ -51,5 +51,5 @@ describe("ParallaxLayers", () => {
     await takeSnapshot(
       "ParallaxLayers - Test with parameterized delay and random options - After delay",
     );
-  }); */
+  });
 });
