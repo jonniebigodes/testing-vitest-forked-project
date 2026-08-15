@@ -30,7 +30,7 @@ describe("KeyframeInterruptHover", () => {
     await expect.element(screen.getByText("Hover-like")).toBeVisible();
     await takeSnapshot("KeyframeInterruptHover - FasterInterrupts props");
   });
-  /* 
+
   test("Unstable - renders with random timing", async () => {
     const screen = await render(
       <KeyframeInterruptHover
@@ -62,5 +62,5 @@ describe("KeyframeInterruptHover", () => {
     await takeSnapshot(
       "KeyframeInterruptHover - Test with parameterized delay and random options - After delay",
     );
-  }); */
+  });
 });

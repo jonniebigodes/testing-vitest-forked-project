@@ -53,7 +53,7 @@ describe("Button", () => {
       .toHaveStyle({ height: "24px" });
     await takeSnapshot("Button - Small size");
   });
-  /*   test("Unstable - Random test", async () => {
+  test("Unstable - Random test", async () => {
     const screen = await render(
       <Button
         label={`Button with random label ${Math.random()}`}
@@ -64,5 +64,5 @@ describe("Button", () => {
       .element(screen.getByRole("button"))
       .toHaveStyle({ height: "40px" });
     await takeSnapshot("Button - Unstable test with random label");
-  });*/
+  });
 });

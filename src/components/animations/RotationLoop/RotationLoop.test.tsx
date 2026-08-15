@@ -22,7 +22,7 @@ describe("RotationLoop", () => {
     expect(screen.container.firstChild).toBeTruthy();
     await takeSnapshot("RotationLoop - Slower props");
   });
-  /*
+
   test("Unstable - renders with random durationMs", async () => {
     const screen = await render(
       <RotationLoop durationMs={Math.floor(Math.random() * 14000) + 400} />,
@@ -30,7 +30,7 @@ describe("RotationLoop", () => {
     expect(screen.container.firstChild).toBeTruthy();
     await takeSnapshot("RotationLoop - Unstable rest with random options");
   });
-   test("Unstable - Parameterized test with delay", async () => {
+  test("Unstable - Parameterized test with delay", async () => {
     const screen = await render(
       <RotationLoop durationMs={Math.floor(Math.random() * 14000) + 400} />,
     );
@@ -44,5 +44,5 @@ describe("RotationLoop", () => {
     await takeSnapshot(
       "RotationLoop - Test with parameterized delay and random options - After delay",
     );
-  }); */
+  });
 });

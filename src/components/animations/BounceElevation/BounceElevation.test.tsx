@@ -22,7 +22,7 @@ describe("BounceElevation", () => {
     expect(screen.container.firstChild).toBeTruthy();
     await takeSnapshot("BounceElevation - Custom liftPx and cycleMs");
   });
-  /* 
+
   test("Unstable - renders with random liftPx and cycleMs", async () => {
     const screen = await render(
       <BounceElevation
@@ -33,7 +33,7 @@ describe("BounceElevation", () => {
     expect(screen.container.firstChild).toBeTruthy();
     await takeSnapshot("BounceElevation - Unstable rest with random options");
   });
-   test("Unstable - Parameterized test with delay", async () => {
+  test("Unstable - Parameterized test with delay", async () => {
     const screen = await render(
       <BounceElevation
         liftPx={Math.floor(Math.random() * 60) + 20}
@@ -50,5 +50,5 @@ describe("BounceElevation", () => {
     await takeSnapshot(
       "BounceElevation - Test with parameterized delay and random options - After delay",
     );
-  }); */
+  });
 });

@@ -24,7 +24,7 @@ describe("LoadingPulseDots", () => {
     expect(screen.container.firstChild).toBeTruthy();
     await takeSnapshot("LoadingPulseDots - Compact props");
   });
-  /*  
+
   test("Unstable - renders with random dotCount, cycleMs, and color", async () => {
     const screen = await render(
       <LoadingPulseDots
@@ -38,7 +38,7 @@ describe("LoadingPulseDots", () => {
     expect(screen.container.firstChild).toBeTruthy();
     await takeSnapshot("LoadingPulseDots - Unstable rest with random options");
   });
- test("Unstable - Parameterized test with delay", async () => {
+  test("Unstable - Parameterized test with delay", async () => {
     const screen = await render(
       <LoadingPulseDots
         dotCount={Math.floor(Math.random() * 10) + 3}
@@ -58,5 +58,5 @@ describe("LoadingPulseDots", () => {
     await takeSnapshot(
       "LoadingPulseDots - Test with parameterized delay and random options - After delay",
     );
-  }); */
+  });
 });
